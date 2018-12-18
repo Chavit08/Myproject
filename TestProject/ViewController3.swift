@@ -25,6 +25,10 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     static var eMail: String?
     static var dataString: [String] = []
     
+    @IBOutlet weak var Tname: UITextField!
+    @IBOutlet weak var Stitle: UITextField!
+
+    @IBOutlet weak var Timage: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         Fname.text = ViewController3.dataString[0]
@@ -47,7 +51,7 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return listpiture.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,7 +63,10 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     
     
+    @IBAction func backpage(_ sender: Any) {
         
+    }
+    
 }
     /*
     // MARK: - Navigation
