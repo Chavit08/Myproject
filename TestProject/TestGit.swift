@@ -8,4 +8,5 @@
 
 import Foundation
 var i:String?
-
+var a:String?
+var b:String?
