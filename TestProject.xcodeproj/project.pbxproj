@@ -14,6 +14,8 @@
 		6905097E21C79781006D05FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6905097C21C79781006D05FE /* LaunchScreen.storyboard */; };
 		6905098921C79781006D05FE /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905098821C79781006D05FE /* TestProjectTests.swift */; };
 		6905099421C79781006D05FE /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905099321C79781006D05FE /* TestProjectUITests.swift */; };
+		690509A421C7A51D006D05FE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690509A321C7A51D006D05FE /* ViewController2.swift */; };
+		690509A621C7AF24006D05FE /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690509A521C7AF24006D05FE /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		6905098F21C79781006D05FE /* TestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6905099321C79781006D05FE /* TestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectUITests.swift; sourceTree = "<group>"; };
 		6905099521C79781006D05FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690509A321C7A51D006D05FE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		690509A521C7AF24006D05FE /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				6905097A21C79781006D05FE /* Assets.xcassets */,
 				6905097C21C79781006D05FE /* LaunchScreen.storyboard */,
 				6905097F21C79781006D05FE /* Info.plist */,
+				690509A321C7A51D006D05FE /* ViewController2.swift */,
+				690509A521C7AF24006D05FE /* ViewController3.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				6905097621C79780006D05FE /* ViewController.swift in Sources */,
 				6905097421C79780006D05FE /* AppDelegate.swift in Sources */,
+				690509A621C7AF24006D05FE /* ViewController3.swift in Sources */,
+				690509A421C7A51D006D05FE /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
