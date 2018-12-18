@@ -16,6 +16,7 @@
 		6905099421C79781006D05FE /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6905099321C79781006D05FE /* TestProjectUITests.swift */; };
 		690509A421C7A51D006D05FE /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690509A321C7A51D006D05FE /* ViewController2.swift */; };
 		690509A621C7AF24006D05FE /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690509A521C7AF24006D05FE /* ViewController3.swift */; };
+		6906CF8E21C8AA680041EE07 /* TestGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6906CF8D21C8AA680041EE07 /* TestGit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6905099521C79781006D05FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		690509A321C7A51D006D05FE /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		690509A521C7AF24006D05FE /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		6906CF8D21C8AA680041EE07 /* TestGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				6905097F21C79781006D05FE /* Info.plist */,
 				690509A321C7A51D006D05FE /* ViewController2.swift */,
 				690509A521C7AF24006D05FE /* ViewController3.swift */,
+				6906CF8D21C8AA680041EE07 /* TestGit.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				6905097621C79780006D05FE /* ViewController.swift in Sources */,
 				6905097421C79780006D05FE /* AppDelegate.swift in Sources */,
+				6906CF8E21C8AA680041EE07 /* TestGit.swift in Sources */,
 				690509A621C7AF24006D05FE /* ViewController3.swift in Sources */,
 				690509A421C7A51D006D05FE /* ViewController2.swift in Sources */,
 			);
