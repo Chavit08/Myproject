@@ -15,15 +15,36 @@ class ViewController3: UIViewController {
     @IBOutlet weak var Nname: UILabel!
     @IBOutlet weak var Lage: UILabel!
     @IBOutlet weak var Lmail: UILabel!
+    
+    static var fName: String?
+    static var lName: String?
+    static var nName: String?
+    static var aGe: String?
+    static var eMail: String?
+    static var dataString: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        Fname.text = ViewController3.dataString[0]
+        Lname.text = ViewController3.dataString[1]
+        Nname.text = ViewController3.dataString[3]
+        Lage.text = ViewController3.dataString[4]
+        Lmail.text = ViewController3.dataString[5]
     }
-    func showdata(){
+    
+    static func Getdata(ffname:String,llname:String,nname:String,aage:String,mmail:String){
+        dataString.append(ffname)
+        dataString.append(llname)
+        dataString.append(nname)
+        dataString.append(aage)
+        dataString.append(mmail)
+        print(dataString)
         
     }
-
+    
+    
+        
+}
     /*
     // MARK: - Navigation
 
@@ -34,4 +55,4 @@ class ViewController3: UIViewController {
     }
     */
 
-}
+

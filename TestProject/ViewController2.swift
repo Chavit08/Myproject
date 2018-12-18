@@ -17,10 +17,12 @@ class ViewController2: UIViewController {
     @IBOutlet weak var ButtonOK: UIButton!
     @IBOutlet weak var showdatas: UILabel!
     @IBOutlet weak var showstring: UILabel!
-
     var texts:String?
     var fnames: String?
     var lnames: String?
+    var nname: String?
+    var age: String?
+    var email: String?
     var nums: String="Boss"
     @IBOutlet weak var ShowLabel: UILabel!
     
@@ -32,12 +34,18 @@ class ViewController2: UIViewController {
     @IBAction func ClickOK(_ sender: Any) {
         fnames = self.TextFname.text
         lnames = self.TextLname.text
+        nname = self.TextNickname.text
+        age = self.TextAge.text
+        email = self.TextEmail.text
         print(fnames)
         showname(name: fnames!)
-
-        var a:String = datareturn(num: nums)
+        let a:String = datareturn(num: nums)
         print(a)
         showstring.text = a
+        ViewController3.Getdata(ffname: fnames!, llname: lnames!, nname: nname!, aage: age!, mmail: email!)
+        
+        
+        
     }
     func showname(name:String){
         var sss  = name

@@ -110,6 +110,7 @@
                                 <state key="normal" title="OK"/>
                                 <connections>
                                     <action selector="ClickOK:" destination="UVr-bu-KIc" eventType="touchUpInside" id="VOU-Ic-ez4"/>
+                                    <segue destination="jDJ-32-nq2" kind="show" id="UhQ-Yl-2MH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RZ-of-STa">
