@@ -15,7 +15,9 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     @IBOutlet weak var Nname: UILabel!
     @IBOutlet weak var Lage: UILabel!
     @IBOutlet weak var Lmail: UILabel!
-    var listname: Array<String> = Array()
+    var listname = ["BOSS","BEEM","KUNG","TAK"]
+    var listtitle = ["test","test","tset","test"]
+    var listpiture = ["testimage", "testimage", "testimage", "testimage"]
     static var fName: String?
     static var lName: String?
     static var nName: String?
@@ -45,12 +47,14 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listname.count
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var myCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
         myCell.textLabel?.text = listname[indexPath.row]
+        myCell.detailTextLabel?.text = listtitle[indexPath.row]
+        myCell.imageView?.image = UIImage(named: listpiture[indexPath.row])
         return myCell
     }
     
