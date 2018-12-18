@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController3: UIViewController {
-
+class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
     @IBOutlet weak var Fname: UILabel!
     @IBOutlet weak var Lname: UILabel!
     @IBOutlet weak var Nname: UILabel!
     @IBOutlet weak var Lage: UILabel!
     @IBOutlet weak var Lmail: UILabel!
-    
+    var listname: Array<String> = Array()
     static var fName: String?
     static var lName: String?
     static var nName: String?
@@ -27,9 +27,10 @@ class ViewController3: UIViewController {
         super.viewDidLoad()
         Fname.text = ViewController3.dataString[0]
         Lname.text = ViewController3.dataString[1]
-        Nname.text = ViewController3.dataString[3]
-        Lage.text = ViewController3.dataString[4]
-        Lmail.text = ViewController3.dataString[5]
+        Nname.text = ViewController3.dataString[2]
+        Lage.text = ViewController3.dataString[3]
+        Lmail.text = ViewController3.dataString[4]
+        listname.append(ViewController3.dataString[0])
     }
     
     static func Getdata(ffname:String,llname:String,nname:String,aage:String,mmail:String){
@@ -40,6 +41,17 @@ class ViewController3: UIViewController {
         dataString.append(mmail)
         print(dataString)
         
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listname.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var myCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
+        myCell.textLabel?.text = listname[indexPath.row]
+        return myCell
     }
     
     
