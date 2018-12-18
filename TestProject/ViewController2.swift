@@ -20,6 +20,7 @@ class ViewController2: UIViewController {
 
     var texts:String?
     var fnames: String?
+    var lnames: String?
     var nums: String="Boss"
     @IBOutlet weak var ShowLabel: UILabel!
     
@@ -30,11 +31,13 @@ class ViewController2: UIViewController {
     }
     @IBAction func ClickOK(_ sender: Any) {
         fnames = self.TextFname.text
+        lnames = self.TextLname.text
         print(fnames)
         showname(name: fnames!)
 
         var a:String = datareturn(num: nums)
-//        showstring
+        print(a)
+        showstring.text = a
     }
     func showname(name:String){
         var sss  = name
