@@ -18,25 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pPq-t3-guF">
-                                <rect key="frame" x="-38" y="-422" width="450" height="1099"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="pPq-t3-guF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmP-88-47d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmP-88-47d">
                                 <rect key="frame" x="158" y="369" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click me"/>
                                 <connections>
                                     <action selector="Doclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxi-fK-nJg"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helloworld" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-om-UI5">
-                                <rect key="frame" x="16" y="63" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helloworld" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-om-UI5">
+                                <rect key="frame" x="16" y="63" width="343" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="0lA-eN-rF0"/>
+                                </constraints>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc1-Xi-5Js">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc1-Xi-5Js">
                                 <rect key="frame" x="143" y="435" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to page 2"/>
                                 <connections>
                                     <action selector="Gotopage2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mE-zL-rUx"/>
@@ -44,6 +43,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zc1-Xi-5Js" secondAttribute="trailing" constant="143" id="3Ck-sU-8hq"/>
+                            <constraint firstItem="pPq-t3-guF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IHm-en-Jm3"/>
+                            <constraint firstItem="zc1-Xi-5Js" firstAttribute="top" secondItem="UmP-88-47d" secondAttribute="bottom" constant="36" id="IiZ-fn-VUf"/>
+                            <constraint firstItem="EP5-om-UI5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="LOY-AZ-Jew"/>
+                            <constraint firstItem="pPq-t3-guF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UoC-pC-7J9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EP5-om-UI5" secondAttribute="trailing" constant="16" id="WvQ-OO-6AJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zc1-Xi-5Js" secondAttribute="bottom" constant="202" id="arR-7x-T7T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UmP-88-47d" secondAttribute="trailing" constant="158" id="b5q-5T-fZH"/>
+                            <constraint firstAttribute="bottom" secondItem="pPq-t3-guF" secondAttribute="bottom" id="diC-2t-Ier"/>
+                            <constraint firstItem="pPq-t3-guF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jxk-El-eM9"/>
+                            <constraint firstItem="UmP-88-47d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="sxM-42-t0W"/>
+                            <constraint firstItem="EP5-om-UI5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="u50-WF-D5L"/>
+                            <constraint firstItem="zc1-Xi-5Js" firstAttribute="top" secondItem="UmP-88-47d" secondAttribute="bottom" constant="36" id="wLd-9W-qTW"/>
+                            <constraint firstItem="zc1-Xi-5Js" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="woD-3L-6gj"/>
+                            <constraint firstItem="UmP-88-47d" firstAttribute="top" secondItem="EP5-om-UI5" secondAttribute="bottom" constant="171" id="wqA-SS-Cu3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
