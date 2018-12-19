@@ -229,6 +229,9 @@
                                 <rect key="frame" x="311" y="240" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="Savedata:" destination="jDJ-32-nq2" eventType="touchUpInside" id="8ke-Tr-vOO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-EF-4cH">
                                 <rect key="frame" x="30" y="240" width="34" height="30"/>

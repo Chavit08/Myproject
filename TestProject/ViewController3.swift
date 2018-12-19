@@ -27,8 +27,8 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     @IBOutlet weak var Tname: UITextField!
     @IBOutlet weak var Stitle: UITextField!
-
     @IBOutlet weak var Timage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Fname.text = ViewController3.dataString[0]
@@ -64,6 +64,19 @@ class ViewController3: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     
     @IBAction func backpage(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func Savedata(_ sender: Any) {
+        
+        if Tname.text?.isEmpty ?? true{
+            print("username nil")
+        }
+        else {
+            print("Ok")
+        }
+            
         
     }
     
